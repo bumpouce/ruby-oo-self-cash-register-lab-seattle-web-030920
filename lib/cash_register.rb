@@ -23,7 +23,8 @@ class CashRegister
   end
   
   
-  def apply_discount(discount)
+  def apply_discount
+    self.total = total * 1
   end 
   
 
