@@ -24,8 +24,10 @@ class CashRegister
   
   
   def apply_discount
+    puts "Pre-discount total = #{self.total}"
     if !discount
-      self.total = total * (discount/100)
+      self.total = total * ((100-discount.to_f)/100)
+      puts "New total = #{self.total}"
     end
   end 
   
