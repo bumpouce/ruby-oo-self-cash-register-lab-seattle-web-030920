@@ -27,7 +27,7 @@ class CashRegister
     puts "Discount = #{discount}"
     if discount != 0
       self.total = total * ((100-discount.to_f)/100)
-      puts "New total = #{self.total}"
+      puts "After the discount, the total comes to $#{self.total}."
     end
   end 
   
