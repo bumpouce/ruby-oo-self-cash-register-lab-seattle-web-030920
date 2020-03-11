@@ -19,7 +19,7 @@ class CashRegister
 
   
   def add_item (title, price, *quantity)
-    quantity ||= 1
+    quantity[0] ||= 1
     self.total = @total + (price * quantity)
   end
   
